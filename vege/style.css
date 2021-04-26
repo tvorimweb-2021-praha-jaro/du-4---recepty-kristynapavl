@@ -21,6 +21,7 @@ středně široké obrazovky:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    color: white;
 }
 
 .paticka {
@@ -37,3 +38,200 @@ body {
 /* ------------------------------- */
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
+
+
+.receptar {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.podrecepty {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;   
+} 
+
+.hlavni {
+    background-image: url(images/salat.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+.avo {
+    background-image: url(images/chlebicek.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+.pita {
+    background-image: url(images/cizrna.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+.taco {
+    background-image: url(images/tacos.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+.burger {
+    background-image: url(images/burger.jpg);
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+}
+
+.recept {
+    position: relative;
+}
+
+.nazev {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    
+}
+
+.kategorie {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.komentare {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+h1 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+@media screen and (max-width: 479px) {
+
+
+    .hlavni {
+        min-height: 200px;
+        min-width: 320px;
+        flex-grow: 1;
+    }
+
+    .podrecepty {
+        min-width: 320px;  
+        flex-grow: 1;
+        flex-direction: column;
+    } 
+
+    .maly {
+        min-height: 90px;
+        flex-grow: 1;
+    }
+
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 859px) {
+
+
+    .hlavni {
+        min-height: 250px;
+        min-width: 480px;
+        flex-grow: 1;
+    }
+
+    .podrecepty {
+        min-width: 480px;  
+        flex-grow: 1;
+    } 
+
+    .maly {
+        min-height: 150px;
+        min-width: calc(1/2*100%);
+    }
+
+    .nazev {
+        bottom: 1.25rem;
+        left: 1.25rem;   
+    }
+    
+    .kategorie {
+        top: 1.25rem;
+        left: 1.25rem;
+    }
+    
+    .komentare {
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+
+    .hlavni {
+        min-height: 400px;
+        min-width: calc(1/3*100%);
+    }
+
+    .podrecepty {
+        min-width: calc(2/3*100%);  
+    } 
+
+    .nazev {
+        bottom: 1.25rem;
+        left: 1.25rem;
+        
+    }
+    
+    .kategorie {
+        top: 1.25rem;
+        left: 1.25rem;
+    }
+    
+    .komentare {
+        top: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .maly {
+        min-height: 200px;
+        min-width: calc(1/2*100%);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+}
+
+
